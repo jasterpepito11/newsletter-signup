@@ -32,10 +32,13 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
+Newsletter form
+![mobile](./public/assets/images/newsletter-signup(mobile-375x812).png)
+![desktop](./public/assets/images/newsletter-signup(desktop).png)
 
-![](./screenshot.jpg)
-
-
+Success Page
+![mobile](./public/assets/images/newsletter-signup-success-page(mobile-375x812).png)
+![desktop](./public/assets/images/newsletter-signup-success-page(desktop).png)
 **Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
