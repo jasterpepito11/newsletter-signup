@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  /* custom font */
+  --font-roboto: "Roboto", "sans-serif";
+  --font-roboto-bold: "Roboto-Bold", "sans-serif";
+  /* custom colors */
+  --color-dark-grey: hsl(234, 29%, 20%);
+  --color-charcoal-grey: hsl(235, 18%, 26%);
+  --color-grey: hsl(231, 7%, 60%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-tomato: hsl(4, 100%, 67%);
+  /* misc */
+
+}
+
+@layer components {
+  .card {
+    @apply bg-white text-dark-grey h-full text-left sm:h-[520px] sm:flex sm:flex-row-reverse sm:p-6 justify-center sm:rounded-2xl;
+  }
+  .form-btn {
+    @apply flex w-full cursor-pointer justify-center rounded-md bg-dark-grey px-3 py-3 text-sm/6 font-semibold text-white shadow-xs hover:bg-tomato focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-charcoal-grey focus:outline-charcoal-grey;
+  }
+
+  .form-input {
+    @apply block w-full rounded-md bg-white px-3 py-3 text-base text-dark-grey outline-1 -outline-offset-1 outline-grey placeholder:text-grey focus:outline-2 focus:-outline-offset-2 focus:outline-charcoal-grey sm:text-sm/6 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-charcoal-grey;
+  }
+
+  .has-error {
+    @apply outline-tomato text-tomato outline-1 -outline-offset-1 bg-amber-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tomato;
+  }
+}
+
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto-Bold;
+  font-style:normal;
+  font-weight: 700;
+  src: url(/assets/fonts/Roboto-Bold.ttf);
+}
+
+:root {
+  font-family: Roboto,Roboto-Bold, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: normal;
+  font-size: var(--text-base);
+  color-scheme: light dark;
+  color: var(--color-charcoal-grey);
+  background-color: var(--color-charcoal-grey);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  @apply h-full;
+}
+body {
+  @apply h-full flex justify-center m-0 place-items-center;
+  min-width: 320px;
+  min-height: 100vh;
+}
