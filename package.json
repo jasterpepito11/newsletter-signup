@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "bunx --bun vite",
+    "deploy": "gh-pages -d dist",
     "build": "bunx --bun vite build",
     "lint": "eslint .",
     "preview": "vite preview"
